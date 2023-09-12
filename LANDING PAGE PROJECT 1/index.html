@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCTANET INTERNSHIP - PROJECT 1</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Handjet:wght@100;300&family=Lobster&family=Permanent+Marker&family=Poppins:wght@400;700&family=Ubuntu&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Rishab's Landing Page</div>
+
+
+            <div class="burger">&#9776;</div>
+
+            <div class="right">
+                <ul>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Connect Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="text-purple">Rishab Thapliyal</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit GitHub</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secondSection">
+            <h2>MY PROJECTS</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Exam Master Website Using HTML, CSS & JavaScript </p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Snake Game Using HTML, CSS & JAVASCRIPT </p>
+            </div>
+
+        </section>
+
+        <section class="thirdSection">
+            <h2>Contact Me</h2>
+            <div class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button class="btn">Send</button>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Rishab's Developer Website</h3>
+            </div>
+
+
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Secvices</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Secvices</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Secvices</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-rights">
+            Copyright &#169; www.rishabportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Web Designer', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+
+    <script>
+        document.querySelector(".burger").addEventListener("click", () => {
+            document.querySelector(".right").classList.toggle("nav-open");
+        });
+    </script>
+
+
+
+</body>
+
+</html>
